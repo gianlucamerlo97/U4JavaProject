@@ -1,12 +1,14 @@
 package entities;
 
 public abstract class ElementoMultimediale {
+
+    //attributi
     private String titolo;
 
 
     //COSTRUTTORI
-    public ElementoMultimediale(int titolo){
-
+    public ElementoMultimediale(String titolo){
+    this.titolo=titolo;
 
 
     }
