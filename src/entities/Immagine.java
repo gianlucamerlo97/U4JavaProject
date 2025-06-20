@@ -17,4 +17,10 @@ public class Immagine extends ElementoMultimediale implements regolaLuminosità 
                 ", luminosità=" + luminosità +
                 "} " + super.toString();
     }
+
+    //metodi
+
+    public void show(){
+        System.out.println(titolo);
+    }
 }

@@ -1,4 +1,5 @@
 import entities.Audio;
+import entities.ElementoMultimediale;
 import entities.Immagine;
 import entities.Video;
 

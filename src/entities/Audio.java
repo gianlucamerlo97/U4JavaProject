@@ -1,8 +1,9 @@
 package entities;
 
+import interfaces.play;
 import interfaces.volumeModifica;
 
-public class Audio extends ElementoMultimediale{
+public class Audio extends ElementoMultimediale implements play {
 
 
     private int volume;
@@ -50,7 +51,8 @@ public class Audio extends ElementoMultimediale{
     public int abbassaVolume(){
         return volume--;
     }
-
+    @Override
+    public void play(){
 
     }
 }
