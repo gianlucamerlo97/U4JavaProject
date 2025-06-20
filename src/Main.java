@@ -3,17 +3,31 @@ import entities.ElementoMultimediale;
 import entities.Immagine;
 import entities.Video;
 
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
+    ElementoMultimediale[] elementimultimediali= new ElementoMultimediale[5];
+        for(int i=0;i<elementimultimediali.length;i++){
+            System.out.println("Creo elemento  "+(i+1));
 
-        Object[] elementiMultimedia= new Object[5];
-        Audio a1[0]= new Audio("Rainbow",23);
-        Video video02[1]= new Video("Francia",80);
-        Video video03[2]= new Video("Pace",30);
-        Audio a2[3]= new Audio("Gioia",5,true);
-        Immagine img01[4]= new Immagine("Cielo",70);
+            Scanner scanner= new Scanner(System.in);
+            int scelta = Integer.parseInt(scanner.nextLine());
+            switch (scelta){
+                case 1  :Immagine
+                        break;
+                case 2 :Video
+            break;
+                case 3:Audio
+                        break;
+                default:
+                    System.out.println("Scelta non opzionabile");
+
+            }
+
+        }
     }
 }
