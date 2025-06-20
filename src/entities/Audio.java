@@ -1,27 +1,21 @@
 package entities;
 
+import interfaces.volumeModifica;
+
 public class Audio extends ElementoMultimediale{
 
-    private boolean riproducibile;
+
     private int volume;
     private int ripetizioni;
 
     //costruttori
-    public Audio(String titolo,int durata,boolean riproducibile,int volume,int ripetizioni) {
-        super(titolo);
+    public Audio(String titolo,int durata,int volume,int ripetizioni,boolean riproducibile) {
+        super(titolo,riproducibile);
         this.volume=volume;
-        this.riproducibile=riproducibile;
+    this.ripetizioni=ripetizioni;
     }
 
 
-    public boolean isRiproducibile() {
-        return riproducibile;
-    }
-
-    public void setRiproducibile(boolean riproducibile) {
-
-        this.riproducibile = riproducibile;
-    }
 
     public int getVolume() {
         return volume;
@@ -39,7 +33,13 @@ public class Audio extends ElementoMultimediale{
         this.ripetizioni = ripetizioni;
     }
 
-    for(int i=0;i<.length;)
+    @Override
+    public String toString() {
+        return "Audio{" +
+                "volume=" + volume +
+                ", ripetizioni=" + ripetizioni +
+                "} " + super.toString();
+    }
 
     //metodi
     public int alzaVolume(){
@@ -50,4 +50,8 @@ public class Audio extends ElementoMultimediale{
     public int abbassaVolume(){
         return volume--;
     }
+
+
+    }
+}
 }
