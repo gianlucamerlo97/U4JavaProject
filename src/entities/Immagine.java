@@ -2,7 +2,7 @@ package entities;
 
 import interfaces.regolaLuminosità;
 
-public class Immagine extends ElementoMultimediale implements regolaLuminosità {
+public class Immagine extends ElementoMultimediale implements regolaLuminosità{
     private String titolo;
     private int luminosità;
     public Immagine(String titolo,int luminosità,boolean riproducibile) {
@@ -22,5 +22,9 @@ public class Immagine extends ElementoMultimediale implements regolaLuminosità 
 
     public void show(){
         System.out.println(titolo);
+    }
+
+    public int regolaLuminosità(){
+    return this.luminosità;
     }
 }

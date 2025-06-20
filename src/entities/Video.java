@@ -3,7 +3,7 @@ package entities;
 import interfaces.play;
 import interfaces.regolaLuminosità;
 
-public class Video extends ElementoMultimediale implements regolaLuminosità, play {
+public class Video extends ElementoMultimediale implements regolaLuminosità,play {
 
 
     public Video(String titolo, boolean riproducibile) {

@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface regolaLuminosità {
-    void regolaLuminosità();
+    int regolaLuminosità();
 }

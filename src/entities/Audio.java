@@ -53,7 +53,7 @@ public class Audio extends ElementoMultimediale implements play {
     }
     @Override
     public void play(){
-
+        System.out.println("Play the song:"+getTitolo());
     }
 }
 }

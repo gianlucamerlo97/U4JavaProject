@@ -1,7 +1,7 @@
 package interfaces;
 
 public interface volumeModifica {
-    void volueModifica();
+    void volumeModifica();
 
 
 }
